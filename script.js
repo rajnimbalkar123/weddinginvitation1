@@ -546,6 +546,7 @@ async function copyInvite(text) {
 }
 
 
+
 /* =================================
    WEDDING VIDEO AUTO PLAY ON SCROLL
 ================================= */
@@ -553,15 +554,13 @@ async function copyInvite(text) {
 document.addEventListener("DOMContentLoaded", function() {
 
     const weddingVideo = document.getElementById("weddingVideo");
-
     const videoSection = document.getElementById("weddingVideoSection");
 
-    if (!weddingVideo || !videoSection) {
-        return;
-    }
+    if (!weddingVideo || !videoSection) return;
 
-    // Autoplay requires muted video
-    weddingVideo.muted = true;
+    // Sound ON
+    weddingVideo.muted = false;
+    weddingVideo.volume = 1;
 
     const videoObserver = new IntersectionObserver(
         function(entries) {
@@ -570,14 +569,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 if (entry.isIntersecting) {
 
-                    // Start video when section becomes visible
+                    weddingVideo.muted = false;
+
                     weddingVideo.play().catch(function(error) {
-                        console.log("Video playback requires user interaction:", error);
+                        console.log("Autoplay blocked. User interaction required:", error);
                     });
 
                 } else {
 
-                    // Pause video when section leaves screen
                     weddingVideo.pause();
 
                 }
@@ -592,6 +591,12 @@ document.addEventListener("DOMContentLoaded", function() {
     videoObserver.observe(videoSection);
 
 });
+
+
+
+
+
+
 
 
 

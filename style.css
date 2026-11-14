@@ -1369,13 +1369,6 @@ body.night-mode .hindi-welcome p {
 
 /* NORMAL CONTENT */
 
-.family-card-content {
-    color: #fff0c6;
-    font-size: 0.98rem;
-    line-height: 1.9;
-    overflow-wrap: anywhere;
-}
-
 
 /* 12 NAMES - TWO COLUMNS */
 
@@ -1420,28 +1413,6 @@ body.night-mode .hindi-welcome p {
 
 
 /* SENDER DETAILS */
-
-.sender-details p {
-    margin: 0 0 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.sender-details strong {
-    color: #ffe6a3;
-}
-
-.sender-details a {
-    color: #fff0c6;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-.sender-details a:hover {
-    color: #ffffff;
-    text-shadow: 0 0 8px #ffd700;
-}
 
 
 /* TABLET */
@@ -1612,47 +1583,6 @@ body.night-mode .hindi-welcome p {
 /* =====================================
    SENDER DETAILS - GOLDEN SPARKLE HOVER
 ===================================== */
-
-
-/* NORMAL BRIGHT TEXT */
-
-.sender-details p>strong {
-    display: inline-block;
-    position: relative;
-    color: #FFF0C6 !important;
-    font-weight: 600;
-    line-height: 1.9;
-    cursor: pointer;
-    text-shadow: 0 0 2px rgba(255, 255, 230, 0.4), 0 0 5px rgba(255, 215, 120, 0.25);
-    transition: color 0.35s ease, transform 0.35s ease, text-shadow 0.35s ease;
-}
-
-
-/* SPARKLE DECORATIONS */
-
-.sender-details p>strong::before,
-.sender-details p>strong::after {
-    position: absolute;
-    color: #FFD700;
-    font-size: 11px;
-    line-height: 1;
-    opacity: 0;
-    pointer-events: none;
-    text-shadow: 0 0 4px #FFFFFF, 0 0 9px #FFD700;
-    transition: opacity 0.3s ease;
-}
-
-.sender-details p>strong::before {
-    content: "✧";
-    left: -16px;
-    top: 10%;
-}
-
-.sender-details p>strong::after {
-    content: "✦";
-    right: -16px;
-    bottom: 10%;
-}
 
 
 /* SOFT GOLDEN HOVER */
