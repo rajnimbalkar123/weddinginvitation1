@@ -148,7 +148,8 @@ function printPatrika() {
         <html>
         <head>
             <title>सुप्रिया आणि गौरव - शुभविवाह पत्रिका</title>
-<base href="https://weddinginvitation.rajnimbalkar.workers.dev/">
+<base href="https://
+weddinginvitation1.rajnimbalkar.workers.dev/">
             <style>
                 @page {
                     size: A4;
@@ -508,7 +509,7 @@ function showToast(message) {
 
 
 async function shareInvite() {
-    const shortUrl = 'https://tinyurl.com/WeddingSupriya';
+    const shortUrl = 'https://tinyurl.com/WedSupriya';
 
     const text = '॥ श्री गणेशाय नमः ॥\n\n' +
         '💐 आपणांस सस्नेह आमंत्रित करीत आहोत! \n\n' +
@@ -516,8 +517,8 @@ async function shareInvite() {
         '✨ शुभ विवाह : १० डिसेंबर २०२६ \n\n' +
         '✨ लग्नाचा मुहूर्त  : दुपारी १२.२० मिनटे  \n\n' +
         '📍 पत्ता : श्री स्वामी समर्थ मंगल कार्यालय, पंढरपूर-सातारा रोड, मु.पोस्ट तांदुळवाडी, ता.माळशिरस, जि.सोलापूर.\n\n' +
-        '✨ आमची सुंदर डिजिटल लग्नपत्रिका पाहण्यासाठी खालील लिंकवर क्लिक करा!\n\n' +
-        '👇 लग्नपत्रिका येथे पहा 👇\n' +
+        '✨ आमंत्रण तर शब्दांतून दिलेच आहे, पण या मंगल सोहळ्याची सुंदर झलक अनुभवायची असेल,\n\n तर आमची डिजिटल लग्नपत्रिका नक्की उघडा! \n\n तिच्यात दडले आहे आमच्या आनंदाचे खास निमंत्रण...! 💖\n\n' +
+        '👇 एकदा लिंकवर क्लिक करा आणि आमची संपूर्ण लग्नपत्रिका आवर्जून पाहा! 👇\n' +
         shortUrl + '\n\n' +
         'आपण उपस्थित राहून वधू-वरांना प्रेमळ आशीर्वाद द्यावेत, ही आग्रहाची विनंती. 🙏';
 
