@@ -85,6 +85,40 @@ async function toggleMantra(forcePlay = false) {
     }
 }
 
+
+// ==========================================
+// 3. Stop Music When Leaving Browser Tab
+// ==========================================
+
+document.addEventListener('visibilitychange', function() {
+
+    if (document.hidden) {
+
+        // Stop music immediately
+        if (mantraAudio && !mantraAudio.paused) {
+            mantraAudio.pause();
+            mantraAudio.currentTime = 0;
+        }
+
+        // Update player UI
+        updateAudioUI(false);
+
+    }
+
+});
+
+// Stop music when page is being closed or refreshed
+window.addEventListener('pagehide', function() {
+
+    if (mantraAudio) {
+        mantraAudio.pause();
+        mantraAudio.currentTime = 0;
+    }
+
+});
+
+
+
 // ==========================================
 // WEDDING VIDEO & MUSIC AUTO CONTROL
 // ==========================================
